@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Sri Rajarajeshwari Enterprises</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #fff8ef;
+        color: #333;
+      }
+
+      /* HEADER */
+
+      header {
+        background: #5a1b10;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      .logo img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #d4a017;
+      }
+
+      h1 {
+        font-size: 38px;
+        margin: 15px 0 10px;
+      }
+
+      .tagline {
+        font-size: 18px;
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #d4a017;
+        color: white;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      <a class="button" href="tel:+917019972299">📞 Call Now</a>
+      <a class="button" href="https://maps.google.com/?q=Sri+Rajarajeshwari+Enterprises+Sindhanur" target="_blank">📍 Find Us</a>
+      /* HERO SLIDER */
+
+      .slider {
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+      }
+
+      .slides {
+        display: flex;
+        width: 300%;
+        animation: slide 12s infinite;
+      }
+
+      .slides img {
+        width: 33.33%;
+        height: 450px;
+        object-fit: cover;
+      }
+
+      @keyframes slide {
+        0%,
+        30% {
+          transform: translateX(0);
+        }
+
+        35%,
+        60% {
+          transform: translateX(-33.33%);
+        }
+
+        65%,
+        100% {
+          transform: translateX(-66.66%);
+        }
+      }
+
+      /* CONTENT */
+
+      section {
+        padding: 45px 20px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 32px;
+        color: #5a1b10;
+        margin-bottom: 20px;
+      }
+
+      .about {
+        max-width: 750px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+
+      /* PRODUCTS */
+      /* MAIN PRODUCTS SECTION */
+
+      .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+      }
+
+      /* MAIN CATEGORY CARDS */
+
+      .category-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .card {
+        width: 280px;
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px #ddd;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card h3 {
+        padding: 15px;
+        margin: 0;
+      }
+
+      /* DROPDOWN PRODUCTS */
+
+      .dropdown-products {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        gap: 20px;
+      }
+
+      .dropdown-products .card {
+        width: 280px;
+      }
+
+      /* CONTACT */
+
+      .contact {
+        background: #5a1b10;
+        color: white;
+      }
+
+      .contact h2 {
+        color: white;
+      }
+
+      footer {
+        background: #250b06;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+      .cement-img {
+        width: 100%;
+        height: 500px;
+        object-fit: contain;
+        background: white;
+      }
+      .contact p {
+        color: white !important;
+      }
+      .contact p a {
+        background: none !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="https://ibb.co/ynKtcjPt">
+          <img
+            src="https://i.ibb.co/tMngTrKg/IMG-5773.jpg"
+            alt="IMG-5773"
+            border="0"
+          />
+        </a>
+      </div>
+
+      <h1>Sri Rajarajeshwari Enterprises</h1>
+
+      <p class="tagline">Premium Paints & Construction Materials Supplier</p>
+      <br />
+      <a class="button" href="tel:+917019972299">Call Us</a>
+      <br />
+    </header>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="https://i.ibb.co/ZR1Fn6Q5/IMG-5792.jpg" />
+
+        <img src="https://i.ibb.co/cS2Jd0rY/IMG-5793.jpg" />
+
+        <img src="https://i.ibb.co/8LJrpqny/IMG-5791.jpg" />
+      </div>
+    </div>
+
+    <section>
+      <h2>About Us</h2>
+
+      <p class="about">
+        Sri Rajarajeshwari Enterprises is a trusted dealer of premium paints and
+        construction materials in Sindhanur. We provide quality products and
+        reliable service for residential and commercial projects.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Products</h2>
+
+      <div class="products">
+        <!-- PAINTS CATEGORY -->
+
+        <div class="category-box">
+          <div class="card" onclick="toggleProducts('paintProducts')">
+            <img src="https://i.ibb.co/fdrzTpNT/IMG-5784.jpg" />
+
+            <h3>Paints ▼</h3>
+          </div>
+
+          <div id="paintProducts" class="dropdown-products">
+            <div class="card">
+              <img src="https://i.ibb.co/N6jvYg9m/IMG-5795.jpg" />
+
+              <h3>Birla Opus</h3>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.ibb.co/k61Hjv7W/IMG-5802.jpg"
+                alt="IMG-5802"
+                border="0"
+              />
+
+              <h3>Asian Paints</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONSTRUCTION MATERIALS CATEGORY -->
+
+        <div class="category-box">
+          <div class="card" onclick="toggleProducts('materialProducts')">
+            <img src="https://i.ibb.co/nMXWVkmM/IMG-5799.jpg" />
+
+            <h3>Construction Materials ▼</h3>
+          </div>
+
+          <div id="materialProducts" class="dropdown-products">
+            <div class="card">
+              <img
+                class="cement-img"
+                src="https://i.ibb.co/5Xt0M6gr/IMG-5800.jpg"
+                alt="IMG-5800"
+                border="0"
+              />
+
+              <h3>Cement</h3>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://i.ibb.co/qMzb02dP/IMG-5801.jpg"
+                alt="IMG-5801"
+                border="0"
+              />
+
+              <h3>Steel</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleProducts(id) {
+        let productBox = document.getElementById(id);
+
+        if (productBox.style.display === "flex") {
+          productBox.style.display = "none";
+        } else {
+          productBox.style.display = "flex";
+        }
+      }
+    </script>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+
+      <p>
+        📍Kushtagi Road, Near APMC,
+        <br />
+        Sindhanur, Karnataka – 584128
+      </p>
+
+      <br />
+
+      <p>
+        <a
+          href="https://www.instagram.com/hbg_patilconstruction_company?igsh=enFidnIyeGx3cHV3"
+          target="_blank"
+          style="color: white; text-decoration: none"
+        >
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+      </p>
+
+      <br />
+
+      <p>
+        <a
+          href="https://wa.me/917019972299"
+          target="_blank"
+          style="color: white; text-decoration: none"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+      </p>
+
+      <br />
+
+      <a
+        class="button"
+        href="https://www.google.com/maps/search/?api=1&query=5-4-1%2F1A%2F1+Kustagi+Road+Bhagiratha+Colony+Sindhanur+Raichur+Karnataka+584128"
+        target="_blank"
+      >
+        View on Google Maps
+      </a>
+    </section>
+
+    <footer>© Sri Rajarajeshwari Enterprises</footer>
+  </body>
+</html>
