@@ -78,22 +78,23 @@
   object-fit: cover;
 }
 
-      @keyframes slide {
-        0%,
-        30% {
-          transform: translateX(0);
-        }
+     @keyframes slide {
+  0%, 20% {
+    transform: translateX(0);
+  }
 
-        35%,
-        60% {
-          transform: translateX(-33.33%);
-        }
+  25%, 45% {
+    transform: translateX(-25%);
+  }
 
-        65%,
-        100% {
-          transform: translateX(-66.66%);
-        }
-      }
+  50%, 70% {
+    transform: translateX(-50%);
+  }
+
+  75%, 100% {
+    transform: translateX(-75%);
+  }
+}
 
       /* CONTENT */
 
