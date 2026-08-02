@@ -61,23 +61,24 @@
       
        /* HERO SLIDER */
 
-.slider {
-  width: 100%;
-  height: 420px;
-  overflow: hidden;
+.slider{
+    width:100%;
+    height:420px;
+    overflow:hidden;
+    position:relative;
 }
 
-.slides {
-  display: flex;
-  width: 500%;
-  animation: slide 20s infinite;
+.slides{
+    display:flex;
+    width:100%;
+    height:100%;
+    transition:transform 0.8s ease-in-out;
 }
 
-.slides img {
-  width: 20%;
-  height: 420px;
-  object-fit: cover;
-  flex-shrink: 0;
+.slides img{
+    min-width:100%;
+    height:420px;
+    object-fit:cover;
 }
 
 @keyframes slide {
@@ -242,21 +243,14 @@ body {
       <br />
     </header>
 
-    <div class="slider">
-      <div class="slides">
-         <img src="https://i.ibb.co/Y7Bc5Bdv/IMG-5783.jpg" alt="Slide 1" />
-
-    <img src="https://i.ibb.co/chxyLhXN/29607f42-aa08-40e9-908b-e4e219894d07.jpg" alt="Slide 2" />
-
-    <img src="https://i.ibb.co/jkTKZMN1/IMG-5793.jpg" alt="Slide 3" />
-
-    <img src="https://i.ibb.co/hRq4bh1c/IMG-5852.jpg" alt="Slide 4" />
-     
-      <!-- Duplicate first image -->
-
-  <img src="https://i.ibb.co/Y7Bc5Bdv/IMG-5783.jpg" alt="Slide 1" />
-       </div>
-    </div>
+   <div class="slider">
+  <div class="slides" id="slides">
+    <img src="https://i.ibb.co/Y7Bc5Bdv/IMG-5783.jpg" alt="">
+    <img src="https://i.ibb.co/chxyLhXN/29607f42-aa08-40e9-908b-e4e219894d07.jpg" alt="">
+    <img src="https://i.ibb.co/jkTKZMN1/IMG-5793.jpg" alt="">
+    <img src="https://i.ibb.co/hRq4bh1c/IMG-5852.jpg" alt="">
+  </div>
+</div>
 
     <section>
       <h2>About Us</h2>
@@ -351,16 +345,28 @@ body {
     </section>
 
     <script>
-      function toggleProducts(id) {
-        let productBox = document.getElementById(id);
+  function toggleProducts(id) {
+    let productBox = document.getElementById(id);
 
-        if (productBox.style.display === "flex") {
-          productBox.style.display = "none";
-        } else {
-          productBox.style.display = "flex";
-        }
-      }
-    </script>
+    if (productBox.style.display === "flex") {
+      productBox.style.display = "none";
+    } else {
+      productBox.style.display = "flex";
+    }
+  }
+
+  const slides = document.getElementById("slides");
+  const total = slides.children.length;
+  let index = 0;
+
+  function nextSlide() {
+    index++;
+    if (index >= total) index = 0;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  setInterval(nextSlide, 3000);
+</script>
 
     <section class="contact">
       <h2>Contact Us</h2>
